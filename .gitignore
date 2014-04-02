@@ -1,3 +1,4 @@
+*.pyc
 blubb.sh
 build
 build.log
