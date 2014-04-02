@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# File to run the x264 benchmark
+
+cd /hm
+
+/sbin/m5 dumpstats 1000000000 10000000
+/sbin/m5 resetstats
+./TAppEncoderStatic -c encoder_intra_main.cfg -c RaceHorsesC.cfg --FramesToBeEncoded=1
+echo "Done :D"
+/sbin/m5 exit
+/sbin/m5 exit

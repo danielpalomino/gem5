@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# File to run the x264 benchmark
+
+cd /ces265
+
+/sbin/m5 dumpstats 0 1000000000
+/sbin/m5 resetstats
+echo "Starting..."
+./ces265 -i ../hm/RaceHorses_832x480_30.yuv -w 832 -h 480 -Nframes 1 -Ntiles 2 2 1 -Ntileth 2 -QP 32 -fps 1
+echo "Done :D"
+/sbin/m5 exit
+/sbin/m5 exit
