@@ -4,10 +4,11 @@
 
 cd /ces265
 
-/sbin/m5 dumpstats 0 1000000000
+#step 100.000.000 which means 10K dumps per second
+/sbin/m5 dumpstats 0 100000000
 /sbin/m5 resetstats
 echo "Starting..."
-./ces265 -i ../hm/RaceHorses_832x480_30.yuv -w 832 -h 480 -Nframes 10 -Ntiles 2 2 1 -Ntileth 2 -QP 32 -fps 1
+./ces265 -i ../origCfP/RaceHorses_832x480_30.yuv -w 832 -h 480 -Nframes 10 -Ntiles 2 1 2 -Ntileth 2 -QP 27 --stat
 echo "Done :D"
 /sbin/m5 exit
 /sbin/m5 exit
