@@ -7,7 +7,7 @@ cd /ces265
 /sbin/m5 dumpstats 0 100000000
 /sbin/m5 resetstats
 echo "Starting..."
-./ces265 -i ../origCfP/RaceHorses_832x480_30.yuv -w 832 -h 480 -Nframes 10 -Ntiles 4 2 2 -Ntileth 4 -QP 32 -fps 1 --ver
+./ces265 -i ../origCfP/RaceHorses_832x480_30.yuv -w 832 -h 480 -Nframes 10 -Ntiles 4 2 2 -Ntileth 4 -QP 32 -fps 1
 echo "Done :D"
 /sbin/m5 exit
 /sbin/m5 exit
