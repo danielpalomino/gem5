@@ -148,7 +148,7 @@ def makeLinuxAlphaRubySystem(mem_mode, mdesc = None):
     self.intrctrl = IntrControl()
     self.mem_mode = mem_mode
     self.terminal = Terminal()
-    self.kernel = binary('vmlinux_2.6.27')
+    self.kernel = binary('vmlinux')
     self.pal = binary('ts_osfpal')
     self.console = binary('console')
     self.boot_osflags = 'root=/dev/hda1 console=ttyS0'

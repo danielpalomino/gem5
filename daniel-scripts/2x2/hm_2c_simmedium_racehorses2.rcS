@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# File to run the x264 benchmark
+
+cd /hm/bin
+
+#step 1.000.000.000 which means 1K dumps per second
+/sbin/m5 dumpstats 0 1000000000
+/sbin/m5 resetstats
+echo "Starting..."
+./TAppEncoderStatic_staticALPHA -c /hm/cfg/encoder_lowdelay_P_main_2Ref.cfg -c /hm/cfg/per-sequence/RaceHorsesC.cfg -f 10 --SourceWidth=416 --SourceHeight=240 --FrameRate=30 --InputFile=/origCfP/RaceHorses_416x240_2.yuv
+echo "Done :D"
+/sbin/m5 exit
+/sbin/m5 exit

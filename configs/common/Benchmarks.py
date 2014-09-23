@@ -53,6 +53,7 @@ class SysConfig:
             return disk(self.diskname)
         elif buildEnv['TARGET_ISA'] == 'alpha':
             return env.get('LINUX_IMAGE', disk('image.img'))
+	     #return env.get('LINUX_IMAGE', disk('linux-parsec-2-1-m5.img'))
         elif buildEnv['TARGET_ISA'] == 'x86':
             return env.get('LINUX_IMAGE', disk('x86root.img'))
         elif buildEnv['TARGET_ISA'] == 'arm':
