@@ -8,7 +8,7 @@ cd /hm/bin
 /sbin/m5 dumpstats 0 1000000000
 /sbin/m5 resetstats
 echo "Starting..."
-./TAppEncoderStatic_ALPHA -c /hm/cfg/encoder_lowdelay_P_main_2Ref.cfg -c /hm/cfg/per-sequence/BQMall.cfg -f 10 --InputFile=../../origCfP/BQMall_30frames.yuv --QP=32 --AC_DataLevel=0 --AC_AlgorithmLevel=0 --HadamardME=0 --FEN=0 --FDM=0 --TimePerFrame=0
+./TAppEncoderStatic_ALPHA -c /hm/cfg/encoder_lowdelay_P_main_2Ref.cfg -c /hm/cfg/per-sequence/BQMall.cfg -f 5 --InputFile=../../origCfP/BQMall_30frames.yuv --QP=32 --AC_DataLevel=1 --AC_AlgorithmLevel=1 --HadamardME=0 --FEN=0 --FDM=0 --TimePerFrame=23
 echo "Done :D"
 /sbin/m5 exit
 /sbin/m5 exit
